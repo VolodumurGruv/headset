@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card_image">
+    <img [src]="product.image" alt="">
+  </div>
+  <div class="card_title">
+    {{product.title}}
+  </div>
+  <div class="card_text">
+    {{product.category}}
+  </div>
+  <div class="card_footer">
+    {{product.price | currency}}
+  </div>
+</div>

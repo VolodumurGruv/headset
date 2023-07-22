@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+@import "./assets/styles/mixsings";
+@import "./assets/styles/color-scheme";
+@import "./assets/styles/menu/menu";
+@import "./assets/styles/menu/gmaburger";
+@import "./assets/styles/home";
+@import "./assets/styles/recommended";
+@import "./assets/styles/categories";
+@import "./assets/styles/buy";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;;
+  box-sizing: border-box;
+}
+

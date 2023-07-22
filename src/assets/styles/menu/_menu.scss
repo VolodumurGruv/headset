@@ -1,0 +1,52 @@
+
+.menu-container{
+  display: block;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  // background-color: $bg_menu;
+  z-index: 100;
+}
+
+.logo{
+  width: 190px;
+  height: 24px;
+  margin-top: 64px;
+  margin-left: 120px;
+  background: url('../pics/Logo.png');
+}
+
+.menu {
+  margin-top: 88px;
+  margin-left: 120px;
+  margin-bottom: 200px;
+
+  &_items {
+    margin: 0 0 0 120px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &_item {
+    padding-top: 32px;
+  }
+
+  &_link {
+
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $text-color;
+    cursor:pointer;
+  }
+}
+
+
+.link-active {
+  border-bottom: 1px solid $text_color;
+}

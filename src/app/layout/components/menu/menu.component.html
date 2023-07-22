@@ -1,0 +1,56 @@
+<nav class="menu-container">
+  <div class="logo"></div>
+  <div [classList]="isActive ? 'menu is-active': 'menu'">
+    <button
+      [classList]="isActive ? 'c-gamburger c-gamburger-line is-active' : 'c-gamburger c-gamburger-line'"
+      (click)="toggleButton()">
+      <span>Menu</span>
+    </button>
+    <ul class="menu_items">
+      <li class="menu_item">
+        <a
+          class="menu_link"
+          routerLink="/home"
+          routerLinkActive="link-active"
+          ariaCurrentWhenActive="page"
+          (click)="toggleButton()"
+        >
+        Home
+        </a>
+      </li>
+      <li class="menu_item">
+        <a
+          class="menu_link"
+          routerLink="/recommended"
+          routerLinkActive="link-active"
+          ariaCurrentWhenActive="page"
+          (click)="toggleButton()"
+          >
+          Recommended
+        </a>
+      </li>
+      <li class="menu_item">
+        <a
+          class="menu_link"
+          routerLink="/categories"
+          routerLinkActive="link-active"
+          ariaCurrentWhenActive="page"
+          (click)="toggleButton()"
+          >
+          Categories
+        </a>
+      </li>
+      <li class="menu_item">
+        <a
+          class="menu_link"
+          routerLink="/buy"
+          routerLinkActive="link-active"
+          ariaCurrentWhenActive="page"
+          (click)="toggleButton()"
+          >
+          How to buy
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

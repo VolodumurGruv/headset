@@ -1,0 +1,9 @@
+@mixin title {
+  text-align:center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1.5px;
+  color: $text_color;
+}

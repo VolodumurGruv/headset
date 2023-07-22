@@ -1,0 +1,11 @@
+<section class="categories">
+  <div class="categories_title">Browse Bose <br> products by category</div>
+
+  <div class="categories_cards" *ngIf="productCategories.length">
+    <div class="categories_card" *ngFor="let product of productCategories">
+      <app-card [product]="product"></app-card>
+    </div>
+  </div>
+</section>
+
+

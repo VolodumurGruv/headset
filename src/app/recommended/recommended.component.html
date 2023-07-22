@@ -1,0 +1,12 @@
+<section class="recommended">
+  <p class="recommended_title">Recommended</p>
+  <section class="recommended_card">
+
+
+    <ng-container  *ngIf="recommendedProducts.length">
+      <div  *ngFor="let product of recommendedProducts">
+        <app-card [product]="product"></app-card>
+      </div>
+    </ng-container>
+  </section>
+</section>

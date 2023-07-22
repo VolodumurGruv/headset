@@ -1,0 +1,103 @@
+.c-gamburger {
+  display: block;
+  position: absolute;
+  right: 120px;
+  top: 64px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  box-shadow: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.c-gamburger:focus {
+  outline: none;
+}
+
+.c-gamburger span {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 1px;
+  right: 1px;
+  height: 2px;
+  background: $text-color;
+}
+
+.c-gamburger span::before,
+.c-gamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: $text-color;
+  content: "";
+}
+
+.c-gamburger span::before {
+  top: -5px;
+}
+
+.c-gamburger span::after {
+  bottom: -5px;
+}
+
+
+
+
+.c-gamburger-line span::before,
+.c-gamburger-line span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-gamburger-line span::before {
+  transition-property: top, transform;
+}
+.c-gamburger-line span::after {
+  transition-property: bottom, transform;
+}
+
+
+
+.c-gamburger-line.is-active span {
+  background: none;
+}
+
+.c-gamburger-line.is-active span::before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.c-gamburger-line.is-active span::after {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+.c-gamburger-line.is-active span::before,
+.c-gamburger-line.is-active span::after {
+  transition-delay: 0s 0.3s;
+}
+
+/* menu */
+.menu {
+  margin-left: 0;
+  margin-top: -340px;
+  left: 0;
+  top: 0;
+  transition: all ease 0.3s;
+  z-index: 9999;
+}
+
+.menu.is-active{
+  height: 100vh;
+  margin-top: 64px;
+  margin-bottom: 384px;
+  background-color: $bg_menu;
+}

@@ -1,0 +1,31 @@
+.home {
+  width: auto;
+  height: 100vh;
+  background: no-repeat url('./pics/Headphones-image-1.png');
+  background-size: cover;
+  overflow: hidden;
+
+  &_wave {
+    margin: -64px 0 0 120px;
+  }
+
+  &_text {
+    margin: 64px 0 0 120px;
+  }
+
+  &_text_content {
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 1.5px;
+    color: $text_color;
+  }
+
+  &_wrap {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin-top: 72vh;
+  }
+}
